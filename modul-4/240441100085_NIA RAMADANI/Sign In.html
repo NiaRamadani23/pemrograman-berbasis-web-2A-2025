@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+      function checkForm() {
+        const email = document.getElementById("email").value;
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        if (!email || !username || !password) {
+          alert("Harap isi semua kolom!");
+        } else {
+          alert("Form berhasil dikirim!");
+        }
+      }
+    </script>
+  </head>
+  <body>
+
+    <!-- Login -->
+    <section>
+        <div class="flex justify-between fixed">
+            <div class="w-210 bg-purple-800 h-scren py-34 px-8">
+                <img src="Gambar 5.png">
+            </div>
+            <div class="p-20">
+                <div class="w-70">
+                    <img src="logo.png">
+                </div>
+                <div>
+                    <h1 class="font-medium text-[30px] pt-10">Mulai Hari Ini</h1>
+                    <p class="text-[20px]">Menunggu besok? Bisa jadi kamu takkan pernah mulai.</p>
+                </div>
+                <div
+            <div class="pt-10 text-[20px]">
+              <form action="#">
+                <div class="pb-5">
+                  <label for="email" class="block pb-1">Alamat Email</label>
+                  <input type="email" name="email" id="email" placeholder="Masukan Alamat Email Anda" class="rounded-2xl border border-gray-300 px-4 py-1 w-full">
+                </div>
+                <div class="pb-5">
+                  <label for="username" class="block pb-1">Nama Lengkap</label>
+                  <input type="text" name="username" id="username" placeholder="Masukkan nama lengkap Anda" class="rounded-2xl border border-gray-300 px-4 py-1 w-full">
+                </div>
+                <div>
+                  <label for="password" class="block pb-1">Password</label>
+                  <input type="password" name="password" id="password" placeholder="Masukkan Password Anda" class="rounded-2xl border border-gray-300 px-4 py-1 w-full">
+                </div>
+              </form>
+              <div class="pt-[40px] text-white text-center">
+                <div class="block rounded-3xl w-full py-2 bg-purple-700">
+                  <button onclick="checkForm()">Sign Up</button>
+                </div>
+              </div>
+              <div class="pt-5 text-center flex">
+                <a href="#" class="flex items-center justify-center gap-2 border border-gray-300 rounded-3xl px-24 py-1 w-full">
+                  <img src="ic_google.png" class="w-5 h-5" alt="Google Logo">
+                  <span class="text-[20px] text-black">Sign Up with Google</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>
